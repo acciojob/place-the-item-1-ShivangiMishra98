@@ -1,24 +1,147 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <!-- the entire body must be written by student -->
+    <form action="" method="post">
+      <label for="name" id="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="user_name"
+        placeholder="your name"
+        required
+      />
+      <br />
 
-<body>
-	<!-- the entire body must be written by student -->
-	<h1>this is flexbox tutorial</h1>
-<div class="holder">
-	
-<div class="item" id="item-1">first box</div>
-<div class="item" id="item-2"> second box</div>
-<div class="item" id="item-3">third box</div>
-<div class="item" id="item-4">fourth box</div>
-</div>
-    <script type="text/javascript" src="./script.js">
-</script>
+      <label for="email" id="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="your email"
+        required
+      />
+      <br />
+      <label for="Gender"> Gender</label>
+      <input
+        type="radio"
+        value="female"
+        id="gender"
+        name="gender"
+        required
+      />Female
+      <input type="radio" value="male" id="Gender" name="gender" required />
+      Male
+      <br />
+      <label for="laptop">Laptop Brands</label>
+      <select name="laptop" id="laptop" required>
+        <option value="Apple">Apple</option>
+        <option value="Asus">Asus</option>
+        <option value="HP">HP</option>
+      </select>
+      <br />
+      <br />
+      <label for="dob" id="dob">DOB</label>
+      <input type="date" name="dob" id="dob" required />
+      <br />
+      <label for="age" id="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="your age"
+        required
+      />
+      <br />
+      <br />
+      <label for="portfolio" id="portfolio">Portfolio link</label>
+      <input type="url" name="portfolio" id="portfolio" />
+      <br />
 
-</body>
+      <label for="password" id="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        required
+      />
+      <br />
+      <button type="submit">SUBMIT</button>
+    </form>
+    <header>
+      <h1>Job App Form</h1>
+    </header>
+    <main>
+      <form action="./main.html" method="post">
+        <label for="name">Name</label><br />
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter Full Name"
+          required
+        /><br /><br />
+        <label for="email">Email</label><br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Email"
+          required
+        /><br /><br />
+        <label for="gender" id="gender">Gender</label><br />
+        <input
+          type="radio"
+          name="gender"
+          value="male"
+          id="male"
+          value="male"
+          required
+        />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required />
+        <label for="female">Female</label><br /><br />
+        <label for="laptop">Laptop</label><br />
+        <select name="laptop" id="laptop" required>
+          <option value="apple">Apple</option>
+          <option value="asus">Asus</option>
+          <option value="hp">HP</option></select
+        ><br /><br />
+        <label for="age">Age</label><br />
+        <input
+          id="age"
+          type="number"
+          placeholder="Enter Age"
+          required
+        /><br /><br />
+        <label for="dob">DOB</label><br />
+        <input
+          id="dob"
+          type="date"
+          placeholder="Enter DOB"
+          required
+        /><br /><br />
+        <label for="password">Password</label><br />
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          required
+        /><br /><br />
+        <label for="portfolio">Portfolio</label><br />
+        <input
+          id="portfolio"
+          type="url"
+          placeholder="Enter Website URL"
+          required
+        /><br /><br />
+        <label for="submit">Submit</label><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
 
-</html>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
